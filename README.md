@@ -246,17 +246,12 @@ Consumer-Price-Trend-Analytics/
 │
 ├── All India Consumer Price Index.csv
 │
-├── DVT_Experiment_1_CRISP_DM_SEMMA_KDD_WITH_OUTPUTS.ipynb
-├── DVT_Experiment_2_WITH_OUTPUTS.ipynb
-├── DVT_Experiment_3_WITH_OUTPUTS.ipynb
-├── DVT_Experiment_4.ipynb
-├── DVT_Experiment_5_WITH_OUTPUTS.ipynb
-│
-├── consumer_price_index.xlsx
-├── consumer_price_index_converted.csv
-├── cleaned_consumer_price_index.xlsx
-├── consumer_price_index.json
-└── consumer_price_index.db
+├── DVT_Experiment1.ipynb
+├── DVT_Experiment2.ipynb
+├── DVT_Experiment3.ipynb
+├── DVT_Experiment4.ipynb
+├── DVT_Experiment5.ipynb
+
 ```
 
 ---
