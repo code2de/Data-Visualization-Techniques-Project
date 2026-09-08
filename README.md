@@ -1,227 +1,123 @@
-# Consumer Price Trend Analytics
+# Data Visualization Techniques Lab Record
 
-## Data Visualization Techniques Lab
+## Overview
 
-This project analyzes the **All India Consumer Price Index (CPI)** dataset using Python-based data processing, data mining methodologies, preprocessing techniques, and exploratory data visualization.
+This repository contains the experiments and mini projects completed as part of the **Data Visualization Techniques (DVT) Laboratory**.
 
-### Dataset
+The lab work focuses on data preprocessing, exploratory data analysis, machine learning methodologies, database management, and data visualization using Python, SQL Server, and visualization tools.
 
-**Dataset:** All India Consumer Price Index (2013–2023)
+Three major datasets and domains were explored:
 
-The dataset contains CPI information across different sectors and consumer categories, including food and beverages, clothing, housing, fuel and light, health, transport and communication, education, and the overall General Index.
-
----
-
-## Project Objective
-
-The objective of this project is to analyze Consumer Price Index data, identify meaningful patterns and trends, preprocess the dataset, apply data mining methodologies, and represent the results through suitable visualizations.
-
-The project demonstrates how data visualization can transform CPI data into understandable insights about:
-
-- Consumer price trends over time
-- Sector-wise CPI differences
-- Category-wise price variations
-- Relationships between CPI categories
-- Distribution of CPI values
-- Correlations among consumer price categories
-- Outliers and unusual CPI observations
+1. Consumer Price Trend Analytics
+2. Financial Data Analytics
+3. Healthcare Data Analytics
 
 ---
 
-# Experiments
+# 1. Consumer Price Trend Analytics
 
-## Experiment 1 — CRISP-DM, SEMMA, and KDD Methodologies
+## Dataset
 
-### Aim
+**All India Consumer Price Index (CPI) Dataset (2013–2023)**
 
-To compare the CRISP-DM, SEMMA, and KDD methodologies for Consumer Price Index analysis and identify a suitable approach for building a machine learning model for CPI prediction.
+The dataset contains Consumer Price Index information used to analyze price trends and inflation patterns.
 
-### Work Performed
+## Work Performed
 
-The three data mining methodologies were applied to the CPI dataset.
+- Loaded and explored the CPI dataset.
+- Performed data preprocessing and handling of missing values.
+- Encoded categorical variables and prepared data for analysis.
+- Applied CRISP-DM, SEMMA, and KDD methodologies.
+- Built a Random Forest Regression model for CPI prediction.
+- Evaluated the model using MAE, RMSE, and R² Score.
+- Created visualizations to understand CPI trends and patterns.
 
-**CRISP-DM**
-1. Business Understanding
-2. Data Understanding
-3. Data Preparation
-4. Modeling
-5. Evaluation
-6. Deployment
+## Key Concepts
 
-**SEMMA**
-1. Sample
-2. Explore
-3. Modify
-4. Model
-5. Assess
-
-**KDD**
-1. Selection
-2. Preprocessing
-3. Transformation
-4. Data Mining
-5. Interpretation/Evaluation
-
-A Random Forest Regressor was trained and evaluated using MAE, RMSE, and R² Score.
-
-### Outcome
-
-The experiment demonstrates how different data mining methodologies can be applied to the same CPI analysis workflow. CRISP-DM provides the most complete end-to-end project lifecycle, while SEMMA and KDD provide structured approaches for analytics, preprocessing, modeling, and evaluation.
+- Data Mining Methodologies
+- Data Preprocessing
+- Regression Analysis
+- Consumer Price Trend Analysis
+- Data Visualization
 
 ---
 
-## Experiment 2 — Data Conversion and Database Integration
+# 2. Financial Data Analytics
 
-### Aim
+## Dataset
 
-To perform data conversion and database integration operations on the Consumer Price Index dataset.
+A financial/retail transaction dataset containing approximately **20,000 records** was used for analysis.
 
-### Work Performed
+The dataset includes transaction-related information such as:
 
-The CPI dataset was processed through multiple data formats and storage methods:
+- Invoice Number
+- Product Details
+- Quantity
+- Transaction Date
+- Unit Price
+- Customer Information
+- Country
+- Sales Revenue
 
-- CSV
-- Excel
-- JSON
-- SQLite
+## Work Performed
 
-The dataset was converted between formats, stored in an SQLite database, retrieved using SQL, and analyzed using Python.
+- Processed and prepared 20,000 transaction records.
+- Calculated Total Sales using Quantity and Unit Price.
+- Stored and managed the dataset using SQL Server.
+- Executed SQL queries for data verification and analysis.
+- Analyzed sales trends and transaction patterns.
+- Created visualizations for revenue, orders, countries, and products.
+- Generated a financial analytics dashboard.
 
-A sector-wise visualization was also created to understand the distribution of CPI records.
+## Key Visualizations
 
-### Visualization
-
-**Sector-wise Consumer Price Index Record Count**
-
-This visualization shows the number of CPI records available for different sectors such as Rural, Urban, and Rural+Urban.
-
----
-
-## Experiment 3 — Data Preprocessing
-
-### Aim
-
-To preprocess the Consumer Price Index dataset by handling missing values, duplicate records, outliers, data types, and feature scaling.
-
-### Work Performed
-
-The following preprocessing operations were performed:
-
-- Identification of missing values
-- Missing-value replacement
-- Conversion of CPI attributes to numerical format
-- Duplicate-record detection and removal
-- Outlier detection using the Interquartile Range (IQR) method
-- Box-plot based outlier visualization
-- Column-name cleaning
-- Min-Max normalization
-- Saving the cleaned dataset
-
-### Outcome
-
-The preprocessing step prepares the CPI dataset for reliable analysis and modeling by improving data consistency and handling common data-quality issues.
+- Monthly Sales Trend
+- Top Countries by Sales
+- Top Products by Revenue
+- Total Revenue
+- Total Orders
+- Customer and Product Analysis
 
 ---
 
-## Experiment 4 — CPI Trend and Sector Analysis
+# 3. Healthcare Data Analytics
 
-### Aim
+## Dataset
 
-To analyze and visualize Consumer Price Index differences and trends across sectors.
+A healthcare appointment dataset containing patient and appointment information was used for analysis.
 
-### Work Performed
+The dataset includes attributes related to:
 
-The experiment calculates average General CPI values for different sectors and visualizes them using bar charts.
+- Patient Information
+- Gender
+- Age
+- Appointment Date
+- Scheduled Date
+- Medical Conditions
+- Scholarship
+- SMS Notifications
+- Appointment Attendance
 
-A time-based analysis is also performed by creating a date attribute from the year and month fields and plotting the General CPI trend.
+## Work Performed
 
-### Visualizations
+- Loaded and processed healthcare data.
+- Selected and prepared approximately 20,000 records.
+- Performed exploratory data analysis.
+- Analyzed patient appointment patterns.
+- Identified factors affecting appointment attendance.
+- Created visualizations for healthcare insights.
+- Performed database storage and analysis using SQL Server.
+- Developed visual representations of healthcare data.
 
-- Average CPI by sector
-- General CPI trend over time
+## Key Analysis Areas
 
-### Outcome
-
-The visualizations provide an intuitive understanding of sector-wise CPI differences and changes in consumer prices over time.
-
----
-
-## Experiment 5 — Exploratory Data Visualization
-
-### Aim
-
-To explore the Consumer Price Index dataset using different graphical visualization techniques.
-
-### Visualizations Performed
-
-1. **Scatter Plot**  
-   Food and Beverages CPI vs General CPI
-
-2. **Box Plot**  
-   General CPI outlier detection
-
-3. **Correlation Heatmap**  
-   Correlation between major CPI categories
-
-4. **Count Plot**  
-   Number of CPI records by sector
-
-5. **Line Plot**  
-   General CPI trend over time
-
-6. **Pie Chart**  
-   Sector-wise distribution of CPI records
-
-7. **Bar Chart**  
-   Top 10 consumer categories based on average CPI
-
-8. **Histogram**  
-   Distribution of General CPI values
-
-9. **Pair Plot**  
-   Relationships among Food and Beverages, Fuel and Light, Health, and General CPI
-
-### Outcome
-
-The exploratory visualizations reveal trends, relationships, distributions, sector differences, category variations, and correlations within the CPI dataset.
-
----
-
-# How This Project Aligns with Data Visualization
-
-The project directly applies the principles of **Data Visualization Techniques** by converting raw CPI data into graphical representations that make patterns and relationships easier to understand.
-
-### 1. Comparison
-
-Bar charts are used to compare:
-
-- Average CPI across sectors
-- Average CPI across consumer categories
-- Number of records across sectors
-
-### 2. Trends
-
-Line charts are used to visualize how the General CPI changes over time.
-
-### 3. Distribution
-
-Histograms and box plots are used to understand the distribution and spread of CPI values and identify potential outliers.
-
-### 4. Relationships
-
-Scatter plots are used to study relationships such as Food and Beverages CPI versus General CPI.
-
-### 5. Correlation
-
-Correlation heatmaps show how different consumer-price categories are related to each other.
-
-### 6. Composition
-
-Pie charts represent the proportion of CPI records across different sectors.
-
-### 7. Multivariate Analysis
-
-Pair plots allow multiple CPI variables to be compared simultaneously and help identify relationships between different consumer categories.
+- Patient Demographics
+- Age Distribution
+- Gender Analysis
+- Appointment Attendance
+- Medical Conditions
+- SMS Notification Analysis
+- No-show Prediction Patterns
 
 ---
 
@@ -231,47 +127,69 @@ Pair plots allow multiple CPI variables to be compared simultaneously and help i
 - Pandas
 - NumPy
 - Matplotlib
-- Seaborn
 - Scikit-learn
-- SQLite
-- Jupyter Notebook
+- SQL Server
+- SQL Server Management Studio (SSMS)
+- Power BI / Tableau
 - GitHub
 
 ---
 
-# Project Structure
+# Overall Workflow
 
-```text
-Consumer-Price-Trend-Analytics/
-│
-├── All India Consumer Price Index.csv
-│
-├── DVT_Experiment1.ipynb
-├── DVT_Experiment2.ipynb
-├── DVT_Experiment3.ipynb
-├── DVT_Experiment4.ipynb
-├── DVT_Experiment5.ipynb
+Data Collection
 
-```
+↓
+
+Data Preprocessing
+
+↓
+
+Exploratory Data Analysis
+
+↓
+
+Feature Engineering
+
+↓
+
+Database Storage
+
+↓
+
+SQL Analysis
+
+↓
+
+Data Visualization
+
+↓
+
+Dashboard Creation
+
+↓
+
+Insight Generation
+
+---
+
+# Key Learning Outcomes
+
+- Understanding different data mining methodologies.
+- Applying data preprocessing techniques.
+- Performing exploratory data analysis.
+- Managing datasets using SQL Server.
+- Creating meaningful data visualizations.
+- Developing dashboards for analytical insights.
+- Applying machine learning techniques for prediction.
+- Transforming raw datasets into meaningful insights.
 
 ---
 
 # Conclusion
 
-The **Consumer Price Trend Analytics** project demonstrates the complete data-analysis workflow from data understanding and preprocessing to data mining and visualization.
+The Data Visualization Techniques Laboratory provided practical experience in analyzing datasets from different domains including consumer price trends, financial transactions, and healthcare.
 
-The project uses the Consumer Price Index dataset to demonstrate how different visualization techniques can communicate complex information effectively. Through bar charts, line charts, scatter plots, heatmaps, histograms, box plots, pie charts, and pairwise visualizations, the project provides meaningful insights into consumer price patterns, sector-wise differences, category relationships, and temporal trends.
+The experiments demonstrated the complete data analytics workflow, starting from data collection and preprocessing to database management, analysis, visualization, and prediction.
 
-The combination of data preprocessing, data mining methodologies, and visualization makes the project suitable for demonstrating the practical application of **Data Visualization Techniques** to a real-world economic dataset.
-
----
-
-## Dataset Source
-
-Kaggle — All India Consumer Price Index (2013–2023)
-
-https://www.kaggle.com/datasets/vaibhavkh/consumer-price-index-cpi-2013-2023
-
-## Repository
-
-https://github.com/code2de/Data-Visualization-Techniques-Project
+Through this laboratory work, various tools and techniques were applied to transform raw data into meaningful insights and effective visual representations.
